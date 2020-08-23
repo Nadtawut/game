@@ -1,28 +1,43 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+        <randomstart/>  
+      <CsBotton/>
+        <RandomDam/> 
   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+
+import randomstart from './components/ramdomstart'
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+ randomstart,
+  },
+
+  data :function(){
+    return{
+    
+    }
+  },
+  methods: {
+    
+    sum(counterValue) {
+      this.total += counterValue
+    },
+  },
 }
 </script>
 
 <style>
 #app {
+  background-image: cover;
+  background-image: url("https://i.pinimg.com/originals/a6/c2/ea/a6c2ea51ac1f3d947be8c1a39a3f3449.jpg");
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  text:center;
 }
 </style>
